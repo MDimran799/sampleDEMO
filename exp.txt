@@ -1,0 +1,37 @@
+namaste 
+
+
+
+create a dynamic web application here my project name is ai examination portal here my techstack is react js with java servelet mvc database is supabase
+
+
+
+
+create table student(
+id number primary key,
+name varchar(20),
+email varchar(20),
+course varchar(20))
+
+
+create sequence empdetails_seq
+ start with 1 
+increment by 1 
+
+
+
+@Id
+		@GeneratedValue(
+		strategy=GenerationType.SEQUENCE,
+		generator="student_seq_gen"
+		
+		)
+
+
+create table empdetails(
+empid number primary key,
+empname varchar(20),
+empemail varchar(20),
+empsalary varchar(20),
+empadd varchar(20),
+emprole varchar(20));
